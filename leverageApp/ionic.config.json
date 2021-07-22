@@ -1,0 +1,7 @@
+{
+  "name": "leverageApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
