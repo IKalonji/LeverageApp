@@ -1,0 +1,10 @@
+
+
+<ion-content>
+  <ion-label>incubation hub here</ion-label>
+  <ion-card *ngFor="let card of cards" [routerLink]="[card.router]">
+    <ion-card-content>
+      {{card.name}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

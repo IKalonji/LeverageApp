@@ -1,21 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Leverage
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
+  <br>
   <ion-card>
-  <ion-card-header>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    <ion-card-title>Card Title</ion-card-title>
-  </ion-card-header>
+    <ion-card-header>
+      <ion-card-subtitle>Leverage your Start-Up</ion-card-subtitle>
+      <ion-card-title>Welcome</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+          <h1>Slide 1</h1>
+        </ion-slide>
+        <ion-slide>
+          <h1>Slide 2</h1>
+        </ion-slide>
+        <ion-slide>
+          <h1>Slide 3</h1>
+        </ion-slide>
+      </ion-slides>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-button (click)="login()">
+    <ion-icon slot="start" name=""></ion-icon>
+    login
+  </ion-button>
 
-  <ion-card-content>
-    Keep close to Nature's heart... and break clear away, once in awhile,
-    and climb a mountain or spend a week in the woods. Wash your spirit clean.
-  </ion-card-content>
-</ion-card>
+  <ion-button (click)="signUp()">
+    <ion-icon slot="" name=""></ion-icon>
+    sign up
+  </ion-button>
+  
 </ion-content>
+

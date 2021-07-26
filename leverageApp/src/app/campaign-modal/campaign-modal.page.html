@@ -1,0 +1,7 @@
+<ion-content>
+  <ion-card button=true *ngFor="let card of modalCards" [routerLink]="[card.router]">
+  <ion-card-content>
+    {{card.name}}
+  </ion-card-content>
+</ion-card>
+</ion-content>
