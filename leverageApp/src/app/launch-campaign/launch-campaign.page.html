@@ -1,5 +1,33 @@
 
 
-<ion-content>
-  <ion-label>launch campaign here</ion-label>
+<ion-content [scrollEvents]="true">
+
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-input  *ngFor="let input of inputItem" type="text" clearInput placeholder="{{input}}"></ion-input>
+  </ion-list>
+  <div>
+    <ion-button (click)="submitted()" expand="block" fill="solid" shape="round" color="success"><ion-icon slot="start" name="checkmark-outline"></ion-icon> Submit for Approval</ion-button>
+  </div>
+
 </ion-content>
+
+
+<style>
+  ion-label{
+    color: dimgrey;
+    padding: 1rem
+  }
+  ion-input{
+    text-align: center;
+  }
+  ion-item{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+  ion-button{
+    width: 60%;
+    bottom: 10%;
+    margin: auto;
+  }
+</style>

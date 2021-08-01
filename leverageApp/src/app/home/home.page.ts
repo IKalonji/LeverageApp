@@ -10,9 +10,31 @@ import { AlertController, MenuController } from '@ionic/angular';
 export class HomePage {
 
   slideOpts = {
-    initialSlide: 1,
-    speed: 400
+    initialSlide: 0,
+    speed: 200
   };
+
+  slides = [{
+    header: "Welcome",
+    image:"./../../assets/leverage_logo.png",
+    content:"Leverage\nis your go-to community\nfor Start Up founders and investors",
+  },
+  {
+    header: "Getting Started",
+    image:"./../../assets/getting_started.png",
+    content:"Looking to start\nor invest in the next Unicorn?\nUse Leverage to fund or raise funds for your Start up.",
+  },
+  {
+    header: "So much more...!",
+    image:"./../../assets/collaborate.png",
+    content:"Leverage\nis more than a Start Up funding platform!\nJoin live workshops, take short courses\nand leverage the community to level up",
+  },
+]
+
+  todo = {
+    title: "Title",
+    description: "description"
+  }
 
   constructor(
     private menuController: MenuController,
@@ -36,7 +58,7 @@ export class HomePage {
         },
         {
           name: 'password',
-          type: 'text',
+          type: 'password',
           placeholder: 'Password'
         },
       ],
@@ -65,12 +87,12 @@ export class HomePage {
         },
         {
           name: 'password',
-          type: 'text',
+          type: 'password',
           placeholder: 'Password'
         },
         {
           name: 'confirm password',
-          type: 'text',
+          type: 'password',
           placeholder: 'Password'
         },
       ],

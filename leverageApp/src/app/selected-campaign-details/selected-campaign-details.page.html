@@ -1,5 +1,49 @@
 
 
 <ion-content>
-  <ion-label>campaign detailed view here</ion-label>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{campaignData.subtitle}}</ion-card-subtitle>
+        <ion-card-title>{{campaignData.title}}</ion-card-title>
+        <img src="{{campaignData.image}}" alt="">
+      </ion-card-header>
+      <ion-card-content>
+        <ion-text>{{campaignData.details}}</ion-text>
+        <br>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="6">Amount Raised:</ion-col>
+            <ion-col size="6">{{campaignData.amountRaised}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">Founder:</ion-col>
+            <ion-col size="6">{{campaignData.founder}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">Start-Up stage:</ion-col>
+            <ion-col size="6">{{campaignData.startupStage}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">Days remaining:</ion-col>
+            <ion-col size="6">{{campaignData.daysRemaining}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">Current revenue:</ion-col>
+            <ion-col size="6">{{campaignData.revenue}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">Prototype Available:</ion-col>
+            <ion-col size="6">{{campaignData.prototypeAvailable}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">Amount Raised:</ion-col>
+            <ion-col size="6">{{campaignData.projectedRevenue}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+      <ion-button (click)="fund()" expand="block" fill="solid" shape="round" color="success">
+        <ion-icon slot="start" name="cash-outline"></ion-icon>
+        Fund Now
+      </ion-button>
+    </ion-card>
 </ion-content>

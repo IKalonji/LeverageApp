@@ -8,7 +8,11 @@ import { Router } from '@angular/router';
 })
 export class DisplayCampaignsPage implements OnInit {
 
-  constructor(private router: Router) { }
+  data: any[];
+
+  constructor(private router: Router) { 
+    this.data = MockData;
+  }
 
   ngOnInit() {
   }
@@ -18,3 +22,741 @@ export class DisplayCampaignsPage implements OnInit {
   }
     
 }
+
+export const MockData = [
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  },
+  {
+    title: "Express Cash App",
+    subtitle: "Modern way to make payments",
+    image: "../../assets/campaign.png",
+    details: "Our app provides a moderm way to consumers to make and receive payments, through our new patented technology. Funding is required for us to take our business to market. We are offerring a total of 30% equity stake in the business",
+    amountRaised: "R100 000"
+  }
+]

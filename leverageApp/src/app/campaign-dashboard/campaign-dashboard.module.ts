@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CampaignDashboardPageRoutingModule } from './campaign-dashboard-routing.module';
-
 import { CampaignDashboardPage } from './campaign-dashboard.page';
 
 @NgModule({
@@ -13,7 +12,7 @@ import { CampaignDashboardPage } from './campaign-dashboard.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CampaignDashboardPageRoutingModule
+    CampaignDashboardPageRoutingModule,
   ],
   declarations: [CampaignDashboardPage]
 })

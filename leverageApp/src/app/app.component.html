@@ -7,8 +7,8 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item *ngFor="let menuItem of menu">
-          <ion-icon name="menuItem.icon" slot="start"></ion-icon>
+        <ion-item button (click)="clicked()" *ngFor="let menuItem of menu">
+          <ion-icon name="{{menuItem.icon}}" slot="start"></ion-icon>
           <ion-label>{{menuItem.name}}</ion-label>
         </ion-item>
       </ion-list>
@@ -21,7 +21,12 @@
         <ion-buttons slot="start">
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
-        <ion-title class="">LEVERAGE</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="homeClicked()">
+            <ion-icon color="secondary" name="home-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title><img src="../assets/leverage_logo.png" alt="">    LEVERAGE</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -29,3 +34,15 @@
     </ion-content>
   </div>
 </ion-app>
+
+<style>
+  ion-content.background{
+    --background: url(../../assets/img/leverage_logo.png) 0 0/100% 100% no-repeat;
+  }
+
+  img{
+    max-width: 15%;
+    max-height: 15%;
+  }
+
+</style>

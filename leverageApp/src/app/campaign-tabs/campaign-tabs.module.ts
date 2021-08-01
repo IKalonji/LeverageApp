@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CampaignModalPageRoutingModule } from './campaign-modal-routing.module';
+import { CampaignModalPageRoutingModule } from './campaign-tabs-routing.module';
 
-import { CampaignModalPage } from './campaign-modal.page';
+import { CampaignModalPage } from './campaign-tabs.page';
 
 @NgModule({
   imports: [

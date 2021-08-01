@@ -8,14 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class IncubationHubPage implements OnInit {
 
   cards = [{
-    name:"idea development",
-    router:'/idea-development'
+    name:"Idea development",
+    subheader: "Get help developing your ideas",
+    router:'/idea-development',
+    color: 'primary'
   },{
-    name:"start up services",
-    router:'/start-up-services'
+    name:"Start-Up services",
+    subheader: "Need assistance with additional services?",
+    router:'/start-up-services',
+    color: 'secondary'
   },{
-    name:"join a workshop",
-    router:'/workshop-list'
+    name:"Join a workshop",
+    subheader: "Gain insights and knowledge through industry experts",
+    router:'/workshop-list',
+    color: 'tertiary'
   }]
 
   constructor() { }
