@@ -6,7 +6,7 @@ from rest_framework import routers, urlpatterns
 from api import views
 
 router = routers.DefaultRouter()
-router.register(r'campaings', views.CampaignViewSet)
+router.register(r'api/campaigns', views.CampaignViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
