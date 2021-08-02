@@ -17,15 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'campaign-modal',
-    loadChildren: () => import('./campaign-modal/campaign-modal.module').then( m => m.CampaignModalPageModule)
-  },
-  {
-    path: 'campaign-dashboard',
-    loadChildren: () => import('./campaign-dashboard/campaign-dashboard.module').then( m => m.CampaignDashboardPageModule)
-  },
-  {
-    path: 'launch-campaign',
-    loadChildren: () => import('./launch-campaign/launch-campaign.module').then( m => m.LaunchCampaignPageModule)
+    loadChildren: () => import('./campaign-tabs/campaign-tabs.module').then( m => m.CampaignModalPageModule)
   },
   {
     path: 'display-campaigns',
@@ -55,14 +47,6 @@ const routes: Routes = [
     path: 'idea-development',
     loadChildren: () => import('./idea-development/idea-development.module').then( m => m.IdeaDevelopmentPageModule)
   },
-  // {
-  //   path: 'founders-network-tabs-post-community',
-  //   loadChildren: () => import('./founders-network-tabs-post-community/founders-network-tabs-post-community.module').then( m => m.FoundersNetworkTabsPostCommunityPageModule)
-  // },
-  // {
-  //   path: 'founders-network-tabs-view-community',
-  //   loadChildren: () => import('./founders-network-tabs-view-community/founders-network-tabs-view-community.module').then( m => m.FoundersNetworkTabsViewCommunityPageModule)
-  // },
 ];
 
 @NgModule({

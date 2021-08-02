@@ -17,7 +17,7 @@ const routes: Routes = [
         loadChildren: () => import('../founders-network-tabs-post-community/founders-network-tabs-post-community.module').then(m => m.FoundersNetworkTabsPostCommunityPageModule)
       }
     ]
-  }
+  },
 ];
 
 @NgModule({

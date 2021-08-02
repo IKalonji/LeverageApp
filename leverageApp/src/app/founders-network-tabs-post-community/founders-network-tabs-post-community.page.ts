@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-founders-network-tabs-post-community',
@@ -12,4 +13,13 @@ export class FoundersNetworkTabsPostCommunityPage implements OnInit {
   ngOnInit() {
   }
 
+  async onClick(){
+    const toast = await new ToastController().create(
+      {
+        message: "Message posted to the Community",
+        duration: 2000
+      }
+    );
+    await toast.present();
+  }
 }

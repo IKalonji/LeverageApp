@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoundersNetworkTabsPage implements OnInit {
 
+  foundersNetworkTabs = [
+    {
+      name: "View Posts",
+      tab: "founders-network-tabs-view-community",
+      icon:""
+    },
+    {
+      name: "Post to Community",
+      tab: "founders-network-tabs-post-community",
+      icon:""
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {

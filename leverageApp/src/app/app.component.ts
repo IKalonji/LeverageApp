@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,32 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  menu = [{
-    name: "menu item",
-    icon: "menu"
+  menu = [
+    {
+      name: "About",
+      icon: "information-circle-outline"
+    },
+    {
+    name: "My Profile",
+    icon: "person"
+    },
+    {
+    name: "Inbox",
+    icon: "mail-unread-outline"
+    },
+    {
+    name: "Logout",
+    icon: "log-out-outline"
     },
   ]
-  constructor() {}
+  constructor(private router: Router,
+    private route: ActivatedRoute) {}
+
+  homeClicked(){
+    this.router.navigate(['/dashboard'], {relativeTo: this.route})
+  }
+
+  clicked(){
+    this.router.navigate(['/home'], {relativeTo: this.route})
+  }
 }

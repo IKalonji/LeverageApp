@@ -1,5 +1,13 @@
 
 
 <ion-content>
-  <ion-label>post here</ion-label>
+  <div style=" padding: 1rem">
+    <ion-textarea placeholder="write to community (200 characters max)" style="background-color: whitesmoke; height: 200px; border: solid 2px rgba(77, 109, 218, 0.74); border-radius: 5px;"></ion-textarea>
+  </div>
+  <br>
+  <br>
+  <ion-button (click)="onClick()" expand="block" shape="round" color="success">
+    <ion-icon slot="start" name="chatbubble-ellipses-outline"></ion-icon>
+    Click me
+  </ion-button>
 </ion-content>

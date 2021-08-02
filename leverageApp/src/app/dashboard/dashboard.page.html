@@ -1,8 +1,24 @@
 
 <ion-content>
-  <ion-card button="true" *ngFor="let card of dashCards" [routerLink]="[card.router]">
+  <br>
+  <ion-card button="true" *ngFor="let card of dashCards" [routerLink]="[card.router]" color="{{card.color}}">
+    <img src="{{card.image}}" alt="">
+    <ion-card-header>
+      <ion-card-subtitle style="color: rgb(247, 243, 243);">{{card.subheader}}</ion-card-subtitle>
+      <ion-card-title style="color: black;">{{card.name}}</ion-card-title>
+    </ion-card-header>
     <ion-card-content>
-      <ion-label>{{card.name}}</ion-label>
     </ion-card-content>
   </ion-card>
 </ion-content>
+
+<style>
+  ion-card{
+    height: 25%;
+  }
+  img{
+    position: absolute;
+    top: 10%;
+  }
+
+</style>

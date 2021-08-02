@@ -1,35 +1,37 @@
 
 <ion-content>
   <br>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Leverage your Start-Up</ion-card-subtitle>
-      <ion-card-title>Welcome</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>
-          <h1>Slide 1</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 2</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 3</h1>
-        </ion-slide>
-      </ion-slides>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-button (click)="login()">
-    <ion-icon slot="start" name=""></ion-icon>
-    login
-  </ion-button>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let slide of slides">
+      <ion-card>
+        <br>
+        <ion-card-subtitle size="large">The Start-Up for Start-Ups</ion-card-subtitle>
+        <br>
+        <ion-card-title>{{slide.header}}</ion-card-title>
+        <br>
+        <img src="{{slide.image}}" alt="">
+        <ion-card-content>
+          <p>{{slide.content}}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
 
-  <ion-button (click)="signUp()">
-    <ion-icon slot="" name=""></ion-icon>
-    sign up
+  <!-- <ion-button (click)="signUp()" color="secondary" expand="block">
+    <ion-icon name="person-add-outline"></ion-icon>
+    Sign Up
   </ion-button>
+  <br>
+  <ion-button (click)="login()" expand="block">
+    <ion-icon slot="start" name="log-in-outline"></ion-icon>
+    Login
+  </ion-button> -->
   
 </ion-content>
+
+<style>
+  ion-slides{
+    height: 100%;
+  }
+</style>
 

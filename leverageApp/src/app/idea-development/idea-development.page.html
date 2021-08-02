@@ -1,5 +1,20 @@
 
 
+
 <ion-content>
-  <ion-label>idea development here</ion-label>
+  <ion-card *ngFor="let card of cards" (click)="presentToast()" color="{{card.color}}">
+    <ion-card-header>
+      <ion-card-subtitle style="color: rgb(252, 249, 249);">{{card.subheader}}</ion-card-subtitle>
+      <ion-card-title style="color: rgb(3, 0, 0);">{{card.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<style>
+  ion-card{
+    height: 33%;
+  }
+</style>
+
