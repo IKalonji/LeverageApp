@@ -9,7 +9,6 @@ class CampaignSerializer(serializers.HyperlinkedModelSerializer):
         fields = (
             'id',
             'campaign_name',
-            'business_reg_number',
             'campaign_info',
             'total_funds_needed',
             'total_funds_raised',

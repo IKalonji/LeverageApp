@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from authentication.forms import UserRegisterForm
 
 from authentication.serializers import RegisterSerializer
 
@@ -12,7 +12,7 @@ class RegisterViewSet(viewsets.ModelViewSet):
     serializer_class = RegisterSerializer
 
     def post(self, request, format=None):
-        form = UserCreationForm(request.POST)
+        form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
             return Response(RegisterSerializer.data, status=status.HTTP_201_CREATED)
