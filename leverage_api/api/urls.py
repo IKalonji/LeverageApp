@@ -10,6 +10,7 @@ from authentication import views as auth_views
 router = routers.DefaultRouter()
 router.register(r'api/campaigns', views.CampaignViewSet)
 router.register(r'api/register', auth_views.RegisterViewSet)
+router.register(r'api/workshops', views.WorkshopViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

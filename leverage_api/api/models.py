@@ -14,3 +14,14 @@ class Campaign(models.Model):
 
     def __str__(self):
         return self.campaign_name
+
+
+class Workshop(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    workshop_title = models.CharField(max_length=100)
+    workshop_description = models.TextField(max_length=250)
+    date_created = models.DateTimeField(auto_now=True)
+    workshop_date = models.DateField()
+
+    def __str__(self):
+        return self.workshop_title
