@@ -7,6 +7,7 @@ class CampaignSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Campaign
         fields = (
+            'id',
             'campaign_name',
             'business_reg_number',
             'campaign_info',
