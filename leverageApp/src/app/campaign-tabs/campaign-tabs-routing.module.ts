@@ -5,7 +5,7 @@ import { CampaignModalPage } from './campaign-tabs.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'campaign-modal',
     component: CampaignModalPage,
     children: [
       {
@@ -17,6 +17,11 @@ const routes: Routes = [
         loadChildren: () => import('../launch-campaign/launch-campaign.module').then( m => m.LaunchCampaignPageModule)
       },
     ]
+  },
+  {
+    path: '',
+    redirectTo: 'campaign-modal/campaign-dashboard',
+    pathMatch: 'full'
   }
 ];
 

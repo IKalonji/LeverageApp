@@ -3,7 +3,7 @@
     <ion-tab-bar slot="top">
       <ion-tab-button *ngFor="let tabs of campaignTabs" tab="{{tabs.tab}}">
         <ion-icon name=""></ion-icon>
-        <ion-label>{{tabs.name}}</ion-label>
+      <ion-label><ion-icon name="{{tabs.icon}}"></ion-icon> {{tabs.name}}</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>

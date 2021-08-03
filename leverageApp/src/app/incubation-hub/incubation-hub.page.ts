@@ -11,17 +11,20 @@ export class IncubationHubPage implements OnInit {
     name:"Idea development",
     subheader: "Get help developing your ideas",
     router:'/idea-development',
-    color: 'primary'
+    color: 'primary',
+    image: '../../assets/idea_dev.png'
   },{
     name:"Start-Up services",
     subheader: "Need assistance with additional services?",
     router:'/start-up-services',
-    color: 'secondary'
+    color: 'secondary',
+    image: '../../assets/services.png'
   },{
     name:"Join a workshop",
     subheader: "Gain insights and knowledge through industry experts",
     router:'/workshop-list',
-    color: 'tertiary'
+    color: 'tertiary',
+    image: '../../assets/workshop.png'
   }]
 
   constructor() { }

@@ -11,12 +11,12 @@ export class CampaignModalPage implements OnInit {
     {
       name: "Campaign Dashboard",
       tab: "campaign-dashboard",
-      icon: ""
+      icon: "bar-chart"
     },
     {
       name: "Launch Campaign",
       tab: "launch-campaign",
-      icon: ""
+      icon: "add-circle-outline"
     }
   ]
   constructor() { }

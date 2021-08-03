@@ -26,36 +26,18 @@ export class CampaignDashboardPage implements OnInit, AfterViewInit {
 
   barChartMethod() {
     this.barChart = new Chart(this.barChartCanvas.nativeElement, {
-      type: 'bar',
+      type: 'line',
       data: {
-        labels: ['BJP', 'INC', 'AAP', 'CPI', 'CPI-M', 'NCP'],
+        labels: ['1-Aug', '2-Aug', '3-Aug', '4-Aug', '5-Aug', '6-Aug', '7-Aug'],
         datasets: [{
-          label: '# of Votes',
-          data: [200, 50, 30, 15, 20, 34],
-          backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 206, 86)',
-            'rgb(75, 192, 192)',
-            'rgb(153, 102, 255)',
-            'rgb(255, 159, 64)'
-          ],
-          borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-          ],
+          label: 'Amount raised',
+          data: [2000, 500, 730, 1300, 1600, 900, 200],
           borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-        }
+            }
+          ]
+        },
       }
-    });
+    );
   }
 
 }

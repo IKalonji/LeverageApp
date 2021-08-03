@@ -25,7 +25,7 @@ export class LaunchCampaignPage implements OnInit {
             text: "Confirm",
             icon: "checkmark-outline",
             handler: () => {
-              this.router.navigate(['/campaign-modal/campaign-dashboard'], )
+              this.router.navigate(['/campaign-modal/campaign-modal/campaign-dashboard'], {})
             }
           },
           {

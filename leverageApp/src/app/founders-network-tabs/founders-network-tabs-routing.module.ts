@@ -5,7 +5,7 @@ import { FoundersNetworkTabsPage } from './founders-network-tabs.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'founders-network-tabs',
     component: FoundersNetworkTabsPage,
     children: [
       {
@@ -18,6 +18,11 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: '',
+    redirectTo: 'founders-network-tabs/founders-network-tabs-view-community',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

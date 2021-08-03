@@ -11,12 +11,12 @@ export class FoundersNetworkTabsPage implements OnInit {
     {
       name: "View Posts",
       tab: "founders-network-tabs-view-community",
-      icon:""
+      icon:"chatbox-outline"
     },
     {
       name: "Post to Community",
       tab: "founders-network-tabs-post-community",
-      icon:""
+      icon:"mail-outline"
     }
   ]
 
