@@ -1,6 +1,6 @@
 from django.db.models import fields
 from rest_framework import serializers
-from api.models import Campaign, Workshop
+from api.models import Campaign, Workshop, Courses
 
 
 class CampaignSerializer(serializers.HyperlinkedModelSerializer):
@@ -8,12 +8,16 @@ class CampaignSerializer(serializers.HyperlinkedModelSerializer):
         model = Campaign
         fields = (
             'id',
-            'campaign_name',
-            'campaign_info',
+            'project_name',
+            'founders',
+            'industry',
+            'description',
+            'funding_stage',
             'total_funds_needed',
-            'total_funds_raised',
-            'total_funds_left'
+            'full_project_details',
+            'campaign_pitch'
         )
+
 
 class WorkshopSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -23,4 +27,13 @@ class WorkshopSerializer(serializers.HyperlinkedModelSerializer):
             'workshop_title',
             'workshop_date',
             'workshop_description',
+        )
+
+
+class CoursesSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Courses
+        fields = (
+            'course_name',
+            'course_description'
         )
