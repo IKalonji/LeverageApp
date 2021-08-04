@@ -11,15 +11,18 @@ export class IdeaDevelopmentPage implements OnInit {
   cards = [{
     name:"Get a Mentor",
     subheader: "Connect with a mentor to assist with your start-up",
-    color: 'success'
+    color: 'success',
+    image: '../../assets/mentor.png'
   },{
     name:"Courses",
     subheader: "Improve your knowledge by taking a short course",
-    color: 'tertiary'
+    color: 'tertiary',
+    image: '../../assets/courses.png'
   },{
     name:"Information Hub",
     subheader: "Access a wealth of information/opportunities for your start-up",
-    color: 'secondary'
+    color: 'secondary',
+    image: '../../assets/info.png'
   }]
 
   constructor(private toastController: ToastController) { }
