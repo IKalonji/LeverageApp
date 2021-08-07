@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://leverage-api-mtn.herokuapp.com/",
+      "secure": false,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "ChangeOrigin": false,
+      "logLevel": "debug"
+    }
+}
