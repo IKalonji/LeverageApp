@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Campaign(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE)
     project_name = models.CharField(max_length=100)
     founders = models.CharField(max_length=200)
     industry = models.CharField(max_length=80)
@@ -20,7 +20,7 @@ class Campaign(models.Model):
 
 
 class Workshop(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE)
     workshop_title = models.CharField(max_length=100)
     workshop_description = models.TextField(max_length=250)
     date_created = models.DateTimeField(auto_now=True)

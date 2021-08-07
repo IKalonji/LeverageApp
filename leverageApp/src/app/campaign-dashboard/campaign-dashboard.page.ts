@@ -32,7 +32,10 @@ export class CampaignDashboardPage implements OnInit, AfterViewInit {
         datasets: [{
           label: 'Amount raised',
           data: [2000, 500, 730, 1300, 1600, 900, 200],
-          borderWidth: 1
+          borderWidth: 1,
+          pointBackgroundColor: '#0000CD',
+          pointBorderColor: '#1E90FF',
+          borderColor: "#bae755",
             }
           ]
         },

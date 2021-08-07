@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AlertController, MenuController } from '@ionic/angular';
+import { AlertController, IonSlides, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,26 +8,30 @@ import { AlertController, MenuController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  @ViewChild('slider', {static: true}) slide: IonSlides
 
   slideOpts = {
     initialSlide: 0,
-    speed: 200
+    speed: 200,
   };
 
   slides = [{
     header: "Welcome",
     image:"./../../assets/leverage_logo.png",
     content:"Leverage\nis your go-to community\nfor Start Up founders and investors",
+    color:"primary"
   },
   {
     header: "Getting Started",
     image:"./../../assets/getting_started.png",
     content:"Looking to start\nor invest in the next Unicorn?\nUse Leverage to fund or raise funds for your Start up.",
+    color:"secondary"
   },
   {
     header: "So much more...!",
     image:"./../../assets/collaborate.png",
     content:"Leverage\nis more than a Start Up funding platform!\nJoin live workshops, take short courses\nand leverage the community to level up",
+    color:"tertiary"
   },
 ]
 
@@ -35,6 +39,8 @@ export class HomePage {
     title: "Title",
     description: "description"
   }
+
+  showContinue = false;
 
   constructor(
     private menuController: MenuController,
@@ -109,7 +115,19 @@ export class HomePage {
     );
     await alert.present();
 
+  }
 
+  async slideChanged(){
+    let index = await this.slide.getActiveIndex()
+    if( index === 2){
+      this.showContinue = true;
+    }else{
+      this.showContinue = false;
+    }
+  }
+
+  onClick(){
+    this.router.navigate(['/dashboard'], {relativeTo:this.route})
   }
 
 }

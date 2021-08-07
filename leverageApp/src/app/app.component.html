@@ -1,5 +1,5 @@
 <ion-app>
-  <ion-menu side="start" content-id="main-content">
+  <ion-menu side="start" content-id="main-content" swipeGesture="true">
     <ion-header>
       <ion-toolbar translucent>
         <ion-title>Menu</ion-title>
@@ -7,8 +7,8 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item button (click)="clicked()" *ngFor="let menuItem of menu">
-          <ion-icon name="{{menuItem.icon}}" slot="start"></ion-icon>
+        <ion-item button (click)="toggleMenu()" *ngFor="let menuItem of menu" [routerLink]="menuItem.router">
+          <ion-icon name="{{menuItem.icon}}" slot="start" color="primary"></ion-icon>
           <ion-label>{{menuItem.name}}</ion-label>
         </ion-item>
       </ion-list>
@@ -22,11 +22,11 @@
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
         <ion-buttons slot="end">
-          <ion-button (click)="homeClicked()">
-            <ion-icon color="secondary" name="home-outline"></ion-icon>
+          <ion-button (click)="profile()">
+            <ion-icon name="person-circle-outline" color="primary"></ion-icon>
           </ion-button>
         </ion-buttons>
-        <ion-title><img src="../assets/leverage_logo.png" alt="">    LEVERAGE</ion-title>
+        <ion-title class="ion-text-center" style="font-weight: 400; color: black;"><img src="../assets/leverage_logo.png" alt=""> leverage</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>

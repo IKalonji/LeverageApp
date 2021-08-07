@@ -1,30 +1,29 @@
 
 
-<ion-content [scrollEvents]="true">
-
+<ion-content [scrollEvents]="true" style="border: rgba(95, 158, 160, 0.2) solid 3px;">
+  <ion-title style="color: dimgrey; padding-top: 2rem;">Complete details below:</ion-title>
   <ion-list lines="full" class="ion-no-margin">
-    <ion-input  *ngFor="let input of inputItem" type="text" clearInput placeholder="{{input}}"></ion-input>
+    <ion-grid fixed>
+      <ion-row *ngFor="let input of inputItem">
+        <ion-col size="12">
+          <ion-item lines=none>
+            <ion-label position="floating" style="text-align: left; color: grey; padding: 0.5rem;">{{input}}</ion-label>
+            <ion-input type="text" required clearInput style="text-align: left; border: solid 1px rgb(223, 223, 223);border-radius: 10px; padding-left: 0.5rem;"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-list>
+  <br>
   <div>
     <ion-button (click)="submitted()" expand="block" fill="solid" shape="round" color="success"><ion-icon slot="start" name="checkmark-outline"></ion-icon> Submit for Approval</ion-button>
   </div>
-
+  <br>
+  <br>
 </ion-content>
 
 
 <style>
-  ion-label{
-    color: dimgrey;
-    padding: 1rem
-  }
-  ion-input{
-    text-align: center;
-  }
-  ion-item{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-  }
   ion-button{
     width: 60%;
     bottom: 10%;

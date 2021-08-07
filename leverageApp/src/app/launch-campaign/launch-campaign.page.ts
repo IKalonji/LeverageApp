@@ -9,7 +9,7 @@ import { ActionSheetController, IonCard } from '@ionic/angular';
 })
 export class LaunchCampaignPage implements OnInit {
 
-  inputItem = ["Project Name", "Founders", "Industry", "Description", "Funding Stage", "Funding required", "Full Project Details", "Upload Pitch Video/Images"]
+  inputItem = ["Project Name", "Founders", "Industry", "Description", "Funding Stage", "Funding required", "Full Project Details", "Campaign Image"]
   constructor(private actionSheetController: ActionSheetController,
     private router: Router) { }
 

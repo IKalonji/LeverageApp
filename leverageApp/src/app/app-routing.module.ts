@@ -47,6 +47,22 @@ const routes: Routes = [
     path: 'idea-development',
     loadChildren: () => import('./idea-development/idea-development.module').then( m => m.IdeaDevelopmentPageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+  },
+  {
+    path: 'funded-campaigns',
+    loadChildren: () => import('./funded-campaigns/funded-campaigns.module').then( m => m.FundedCampaignsPageModule)
+  },
+  {
+    path: 'attend-workshop',
+    loadChildren: () => import('./attend-workshop/attend-workshop.module').then( m => m.AttendWorkshopPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -9,30 +10,51 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AppComponent {
   menu = [
     {
+      name: "Home",
+      icon: "home-outline",
+      router: "/dashboard"
+    },
+    {
       name: "About",
-      icon: "information-circle-outline"
+      icon: "information-circle-outline",
+      router: "/home"
     },
     {
     name: "My Profile",
-    icon: "person"
+    icon: "person",
+    router: "/profile"
     },
     {
     name: "Inbox",
-    icon: "mail-unread-outline"
+    icon: "mail-unread-outline",
+    router: "/inbox"
+    },
+    {
+    name: "Funded Campaigns",
+    icon: "wallet-outline",
+    router: "/funded-campaigns"
+    },
+    {
+    name: "My Workshops",
+    icon: "videocam-outline",
+    router: "/attend-workshop"
     },
     {
     name: "Logout",
     icon: "log-out-outline"
     },
   ]
+
   constructor(private router: Router,
-    private route: ActivatedRoute) {}
+    private route: ActivatedRoute,
+    private menuController: MenuController) {}
 
-  homeClicked(){
-    this.router.navigate(['/dashboard'], {relativeTo: this.route})
+  profile(){
+    this.router.navigate(['/profile'], {relativeTo: this.route})
   }
 
-  clicked(){
-    this.router.navigate(['/home'], {relativeTo: this.route})
+  toggleMenu(){
+    this.menuController.close();
   }
+
 }
