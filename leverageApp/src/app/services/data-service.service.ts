@@ -8,6 +8,9 @@ import { HttpClient } from "@angular/common/http";
 export class DataService{
 
     loggedIn = false;
+
+    showToolbar = true;
+
     user = {
         username: "demo",
         name: "demo",
@@ -37,4 +40,8 @@ export class DataService{
     getUser(){return this.user}
 
     setLoggedIn(event: boolean){this.loggedIn=event;}
+
+    toolbar(){
+        return this.showToolbar;
+    }
 }
