@@ -18,7 +18,8 @@ export class IdeaDevelopmentPage implements OnInit {
     name:"Courses",
     subheader: "Improve your knowledge by taking a short course",
     color: 'tertiary',
-    image: '../../assets/courses.png'
+    image: '../../assets/courses.png',
+    router: '/courses'
   },{
     name:"Information Hub",
     subheader: "Access a wealth of information/opportunities for your start-up",

@@ -2,7 +2,7 @@
 
 
 <ion-content>
-  <ion-card *ngFor="let card of cards" (click)="presentToast()" color="{{card.color}}">
+  <ion-card *ngFor="let card of cards" (click)="presentToast()" [routerLink]="card.router" color="{{card.color}}">
     <ion-card-header>
       <ion-card-subtitle style="color: rgb(252, 249, 249);">{{card.subheader}}</ion-card-subtitle>
       <ion-card-title style="color: rgb(3, 0, 0);">{{card.name}}</ion-card-title>
