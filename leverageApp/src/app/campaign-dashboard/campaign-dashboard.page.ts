@@ -12,10 +12,10 @@ export class CampaignDashboardPage implements OnInit, AfterViewInit {
   @ViewChild('barChartCanvas') barChartCanvas: ElementRef;
 
   barChart: any;
-  title = "Express Cash App"
+  title = 'Express Cash App';
 
   constructor() {
-    Chart.register(...registerables)
+    Chart.register(...registerables);
    }
 
   ngOnInit() { }
@@ -35,7 +35,7 @@ export class CampaignDashboardPage implements OnInit, AfterViewInit {
           borderWidth: 1,
           pointBackgroundColor: '#0000CD',
           pointBorderColor: '#1E90FF',
-          borderColor: "#bae755",
+          borderColor: '#bae755',
             }
           ]
         },
