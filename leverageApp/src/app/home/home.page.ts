@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AlertController, IonSlides, MenuController } from '@ionic/angular';
+import { AlertController, IonSlides, MenuController, ToastController } from '@ionic/angular';
+import { DataService } from '../services/data-service.service';
 
 @Component({
   selector: 'app-home',
@@ -42,11 +43,14 @@ export class HomePage {
 
   showContinue = false;
 
+  user: any;
+
   constructor(
     private menuController: MenuController,
     private alertController: AlertController,
     private router: Router,
-    private route: ActivatedRoute) {}
+    private route: ActivatedRoute,
+    private dataService: DataService) {}
 
   openFirst() {
     this.menuController.enable(true, 'main-content');
@@ -71,8 +75,20 @@ export class HomePage {
       buttons:[
       {
         text: "Login",
-        handler: ()=>{
-          this.router.navigate(['/dashboard'], {relativeTo: this.route})
+        handler: async (alertData)=>{
+          console.log(this.dataService.getUser().email.toLowerCase, alertData.email.toLowerCase(),this.dataService.getUser().password,alertData.password);
+          
+          let correctUser = this.dataService.getUser().email.toLowerCase() == alertData.email.toLowerCase() && this.dataService.getUser().password == alertData.password ? true : false;
+          console.log(correctUser);
+          if (correctUser){
+            this.router.navigate(['/dashboard'], {relativeTo: this.route})
+          } else{
+            const toast = await new ToastController().create({
+              message: "Incorrect Login Details",
+              duration: 2000
+            });
+            await toast.present() 
+          }
         }
       },
       "Cancel"
@@ -85,11 +101,32 @@ export class HomePage {
   async signUp() {
     const alert = await this.alertController.create({
       header: 'Login',
+      animated: true,
       inputs: [
+        {
+          name: 'name',
+          type: 'text',
+          placeholder: 'First Name'
+        },
+        {
+          name: 'surname',
+          type: 'text',
+          placeholder: 'Surname'
+        },
+        {
+          name: 'contact',
+          type: 'text',
+          placeholder: 'Contact Number'
+        },
         {
           name: 'email',
           type: 'text',
-          placeholder: 'email'
+          placeholder: 'Email'
+        },
+        {
+          name: 'user',
+          type: 'text',
+          placeholder: 'Username'
         },
         {
           name: 'password',
@@ -105,7 +142,8 @@ export class HomePage {
       buttons:[
       {
         text: "sign up",
-        handler: ()=>{
+        handler: (alertData)=>{
+          this.user = this.dataService.createUser(alertData.username, alertData.name, alertData.surname, alertData.email, alertData.contact, alertData.password)
           this.login();
         }
       },
@@ -126,8 +164,27 @@ export class HomePage {
     }
   }
 
-  onClick(){
-    this.router.navigate(['/dashboard'], {relativeTo:this.route})
+  async onClick(){
+    const alert = await this.alertController.create({
+      header: 'Login',
+      animated: true,
+      buttons:[
+        {
+          text: "Login",
+          handler: () => {
+            this.login();
+          }
+        },
+        {
+          text: "Sign Up",
+          handler: () => {
+            this.signUp();
+          }
+        }
+      ]
+    }
+    );
+    await alert.present();
   }
 
 }

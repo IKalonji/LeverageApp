@@ -9,6 +9,13 @@ export class DashboardPage implements OnInit {
 
   dashCards = [
     {
+      name:"Incubation Hub",
+      router: '/incubation-hub',
+      subheader: "Workshops, Start-Up Courses and services",
+      color: 'success',
+      image: '../../assets/incubation_hub.png'
+    },
+    {
       name:"My Campaigns",
       subheader: "View your campaigns / Launch a funding campaign",
       router: '/campaign-modal',
@@ -28,15 +35,7 @@ export class DashboardPage implements OnInit {
       router: '/founders-network-tabs',
       color: 'tertiary',
       image: '../../assets/network.png'
-    },
-    {
-      name:"Incubation Hub",
-      router: '/incubation-hub',
-      subheader: "Workshops, Start-Up Courses and services",
-      color: 'success',
-      image: '../../assets/incubation_hub.png'
     }
-
   ]
   constructor() { }
 

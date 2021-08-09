@@ -1,5 +1,59 @@
 
 <ion-content>
+  <ion-title style="padding-top: 1rem; color: rgb(66, 66, 66); font-size: medium;" *ngIf="!showWorkshops">Select preferred category:</ion-title>
+  <ion-grid fixed  *ngIf="!showWorkshops">
+    <ion-row>
+      <ion-col size="11">
+        <ion-item>
+          <ion-label>Farming & Agriculture</ion-label>
+          <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="11">
+        <ion-item>
+          <ion-label>Information Technology</ion-label>
+          <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="11">
+        <ion-item>
+          <ion-label>Retail</ion-label>
+          <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="11">
+        <ion-item>
+          <ion-label>Finance & Infrustructure</ion-label>
+          <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="11">
+        <ion-item>
+          <ion-label>Other</ion-label>
+          <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row style="padding: 2rem">
+      <ion-col size="12">
+        <ion-button (click)="onClick()" expand="full" fill="solid" shape="round" color="success">
+          <ion-icon name="easel-outline" class="ion-padding"></ion-icon>
+          Available Workshops
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-progress-bar color="tertiary" type="indeterminate" *ngIf="loading"></ion-progress-bar>
+  <ion-label *ngIf="loading">Loading...</ion-label>
+  <div *ngIf="showWorkshops">
   <ion-card *ngFor="let i of workshopList">
     <ion-card-header>
       <ion-card-title>{{i.title}}</ion-card-title>
@@ -9,9 +63,10 @@
         <ion-col size="12" style="padding-left: 1rem;">Hosted by: {{i.host}}</ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="9" style="padding-left: 1rem;">{{i.date}}</ion-col>
+        <ion-col size="8" style="padding-left: 1rem;">{{i.date}}</ion-col>
         <ion-col size="3"><ion-button (click)="join()" fill="solid" style="height: 80%;">Attend</ion-button></ion-col>
       </ion-row>
     </ion-grid>
   </ion-card>
+</div>
 </ion-content>

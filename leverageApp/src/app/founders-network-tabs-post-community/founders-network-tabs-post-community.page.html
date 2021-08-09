@@ -4,10 +4,55 @@
   <div style=" padding: 1rem">
     <ion-textarea placeholder="write to community (200 characters max)" style="background-color: whitesmoke; height: 200px; border: solid 2px rgba(77, 109, 218, 0.74); border-radius: 5px;"></ion-textarea>
   </div>
+  <div>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Community to leverage</ion-label>
+      </ion-list-header>
+      <ion-row>
+        <ion-col size="11">
+      <ion-item>
+        <ion-label>Farming & Agriculture</ion-label>
+        <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="11">
+      <ion-item>
+        <ion-label>Information Technology</ion-label>
+        <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="11">
+      <ion-item>
+        <ion-label>Retail</ion-label>
+        <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="11">
+      <ion-item>
+        <ion-label>Finance & Infrustructure</ion-label>
+        <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="11">
+      <ion-item>
+        <ion-label>Other</ion-label>
+        <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+    </ion-list>
+  </div>
   <br>
   <br>
-  <ion-button (click)="onClick()" expand="block" shape="round" color="success">
-    <ion-icon slot="start" name="chatbubble-ellipses-outline"></ion-icon>
-    Post
-  </ion-button>
+  <ion-button (click)="onClick()" expand="block" shape="round" color="success"><ion-icon slot="start" name="chatbubble-ellipses-outline"></ion-icon>Post</ion-button>
+  <br>
 </ion-content>

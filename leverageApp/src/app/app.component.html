@@ -8,7 +8,7 @@
     <ion-content>
       <ion-list>
         <ion-item button (click)="toggleMenu()" *ngFor="let menuItem of menu" [routerLink]="menuItem.router">
-          <ion-icon name="{{menuItem.icon}}" slot="start" color="primary"></ion-icon>
+          <ion-icon name="{{menuItem.icon}}" slot="start" color="tertiary"></ion-icon>
           <ion-label>{{menuItem.name}}</ion-label>
         </ion-item>
       </ion-list>
@@ -19,11 +19,11 @@
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-menu-button color="primary"></ion-menu-button>
+          <ion-menu-button color="secondary"></ion-menu-button>
         </ion-buttons>
         <ion-buttons slot="end">
           <ion-button (click)="profile()">
-            <ion-icon name="person-circle-outline" color="primary"></ion-icon>
+            <ion-icon name="person-circle-outline" color="secondary"></ion-icon>
           </ion-button>
         </ion-buttons>
         <ion-title class="ion-text-center" style="font-weight: 400; color: black;"><img src="../assets/leverage_logo.png" alt=""> leverage</ion-title>
