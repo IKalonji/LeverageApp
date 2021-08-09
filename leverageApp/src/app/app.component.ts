@@ -42,7 +42,8 @@ export class AppComponent implements AfterViewInit{
     },
     {
     name: "Logout",
-    icon: "log-out-outline"
+    icon: "log-out-outline",
+    router: "/home"
     },
   ]
 
