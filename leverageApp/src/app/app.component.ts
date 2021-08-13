@@ -47,17 +47,12 @@ export class AppComponent implements AfterViewInit{
     },
   ]
 
-  showToolbar= false;
-
   constructor(private router: Router,
     private route: ActivatedRoute,
     private menuController: MenuController,
-    private dataService: DataService ) {
-
-    }
-  ngAfterViewInit(): void {
-    this.showToolbar = this.dataService.toolbar()
-  }
+    private dataService: DataService ) {}
+    
+  ngAfterViewInit(): void {}
 
   profile(){
     this.router.navigate(['/profile'], {relativeTo: this.route})
